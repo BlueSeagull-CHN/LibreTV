@@ -5,10 +5,10 @@ const SEARCH_HISTORY_KEY = 'videoSearchHistory';
 const MAX_HISTORY_ITEMS = 5;
 
 // 密码保护配置
-// 注意：PASSWORD 环境变量是必需的，所有部署都必须设置密码以确保安全
 const PASSWORD_CONFIG = {
     localStorageKey: 'passwordVerified',  // 存储验证状态的键名
-    verificationTTL: 90 * 24 * 60 * 60 * 1000  // 验证有效期（90天，约3个月）
+    verificationTTL: 90 * 24 * 60 * 60 * 1000,  // 验证有效期（90天，约3个月）
+    adminLocalStorageKey: 'adminPasswordVerified'  // 新增的管理员验证状态的键名
 };
 
 // 网站信息配置
@@ -128,7 +128,7 @@ const API_SITES = {
     // 而作为观众无辜吗？毫无疑问，他们促成了黄色产业链的再生产。
     // 我们提供此警告，是希望您能认清这些内容的本质——它们是压迫和奴役的工具，而非娱乐。
     ckzy: {
-        api: 'https://www.ckzy1.com'，
+        api: 'https://www.ckzy1.com',
         name: 'CK资源',
         adult: true
     },
@@ -136,12 +136,12 @@ const API_SITES = {
         api: 'https://jkunzyapi.com',
         name: 'jkun资源',
         adult: true
-    }，
+    },
     bwzy: {
         api: 'https://api.bwzym3u8.com',
         name: '百万资源',
         adult: true
-    }，
+    },
     souav: {
         api: 'https://api.souavzy.vip',
         name: 'souav资源',
