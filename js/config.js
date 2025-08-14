@@ -214,10 +214,10 @@ const API_CONFIG = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
             'Accept': 'application/json'
         }
-    },
+    }，
     detail: {
         // 只拼接参数部分
-        path: '?ac=videolist&ids=',
+        path: '?ac=videolist&ids='，
         headers: {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36',
             'Accept': 'application/json'
@@ -236,10 +236,10 @@ const PLAYER_CONFIG = {
     autoplay: true,
     allowFullscreen: true,
     width: '100%',
-    height: '600',
+    height: '600'，
     timeout: 15000,  // 播放器加载超时时间
-    filterAds: true,  // 是否启用广告过滤
-    autoPlayNext: true,  // 默认启用自动连播功能
+    filterAds: true，  // 是否启用广告过滤
+    autoPlayNext: true，  // 默认启用自动连播功能
     adFilteringEnabled: true, // 默认开启分片广告过滤
     adFilteringStorage: 'adFilteringEnabled' // 存储广告过滤设置的键名
 };
@@ -255,8 +255,8 @@ const ERROR_MESSAGES = {
 
 // 添加进一步安全设置
 const SECURITY_CONFIG = {
-    enableXSSProtection: true,  // 是否启用XSS保护
-    sanitizeUrls: true,         // 是否清理URL
+    enableXSSProtection: true，  // 是否启用XSS保护
+    sanitizeUrls: true，         // 是否清理URL
     maxQueryLength: 100,        // 最大搜索长度
     // allowedApiDomains 不再需要，因为所有请求都通过内部代理
 };
@@ -264,12 +264,12 @@ const SECURITY_CONFIG = {
 // 添加多个自定义API源的配置
 const CUSTOM_API_CONFIG = {
     separator: ',',           // 分隔符
-    maxSources: 5,            // 最大允许的自定义源数量
-    testTimeout: 5000,        // 测试超时时间(毫秒)
-    namePrefix: 'Custom-',    // 自定义源名称前缀
+    maxSources: 5，            // 最大允许的自定义源数量
+    testTimeout: 5000，        // 测试超时时间(毫秒)
+    namePrefix: 'Custom-'，    // 自定义源名称前缀
     validateUrl: true,        // 验证URL格式
     cacheResults: true,       // 缓存测试结果
-    cacheExpiry: 5184000000,  // 缓存过期时间(2个月)
+    cacheExpiry: 5184000000，  // 缓存过期时间(2个月)
     adultPropName: 'isAdult' // 用于标记成人内容的属性名
 };
 
